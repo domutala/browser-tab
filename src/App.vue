@@ -4,11 +4,17 @@ import BrowserTab from './components/BrowserTab.vue'
 
 <template>
   <div>
-    <BrowserTab>
-      <template #window-1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, aliquam eligendi? Nesciunt
-        mollitia quod cum ut impedit dolorem, similique laboriosam repellendus praesentium,
-        voluptate, esse quia repellat tempora suscipit animi! Placeat.
+    <BrowserTab :tabs="{ test: { title: 'Test' }, 'page-2': { title: 'page-2' } }">
+      <template #test>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sed molestiae ratione
+        assumenda. Optio, odio ea iure maiores distinctio possimus deleniti? Quidem natus eligendi
+        laudantium voluptates itaque earum aliquid delectus!
+      </template>
+
+      <template #page-2>
+        page 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sed molestiae
+        ratione assumenda. Optio, odio ea iure maiores distinctio possimus deleniti? Quidem natus
+        eligendi laudantium voluptates itaque earum aliquid delectus!
       </template>
     </BrowserTab>
   </div>
