@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import BrowserTab from './components/BrowserTab.vue'
 </script>
 
 <template>
   <div>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tenetur voluptatibus iusto,
-    error omnis in repellendus tempore aliquid ipsum. Enim quibusdam tempora explicabo tempore
-    repellat quae dignissimos at itaque eaque.
+    <BrowserTab>
+      <template #window-1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, aliquam eligendi? Nesciunt
+        mollitia quod cum ut impedit dolorem, similique laboriosam repellendus praesentium,
+        voluptate, esse quia repellat tempora suscipit animi! Placeat.
+      </template>
+    </BrowserTab>
   </div>
 </template>
